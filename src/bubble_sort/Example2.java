@@ -6,6 +6,7 @@ public class Example2 {
     public static void main(String[] args) {
         int[] array = new int[10];
         Random generator = new Random();
+
         for (int i = 0; i < array.length; i++) {
             array[i] = generator.nextInt(10001);
         }
@@ -15,6 +16,7 @@ public class Example2 {
         boolean isSorted;
 
         for (int i = 0; i < array.length; i++) {
+
             isSorted = true;
             for (int j = 1; j < array.length-i; j++) {
                 if(array[j]<array[j-1]){
@@ -26,7 +28,6 @@ public class Example2 {
                 break;
             }
         }
-
 
         System.out.println("After sorting: ");
         printArray(array);
