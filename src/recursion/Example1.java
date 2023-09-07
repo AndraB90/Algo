@@ -6,10 +6,10 @@ public class Example1 {
         System.out.println(getSum(10));
     }
 
-    private static int getSum(int n){
-        if(n==0){
+    private static int getSum(int n) {
+        if (n == 0) {
             return 0;
         }
-        return n+getSum(n-1);
+        return n + getSum(n - 1);
     }
 }
