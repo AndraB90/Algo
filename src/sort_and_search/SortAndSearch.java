@@ -11,15 +11,15 @@ public class SortAndSearch {
         System.out.print("After sorting: ");
         sort(myNumbersList);
         int numberIndex = new Random().nextInt(myNumbersList.size());
-        int numberToSearch= myNumbersList.get(numberIndex);
-        System.out.println("The number to search is: "+numberToSearch);
+        int numberToSearch = myNumbersList.get(numberIndex);
+        System.out.println("The number to search is: " + numberToSearch);
         search(myNumbersList, numberToSearch);
     }
 
     public static void sort(List<Integer> numbersList) {
         boolean isSwap = true;
         while (isSwap) {
-            isSwap =false;
+            isSwap = false;
             for (int i = 0; i < numbersList.size() - 1; i++) {
                 if (numbersList.get(i).compareTo(numbersList.get(i + 1)) > 0) {
                     Integer temp = numbersList.get(i);
@@ -53,6 +53,5 @@ public class SortAndSearch {
             numberOfTrials++;
         }
         return -1; // Number not found in the list.
-
     }
 }
