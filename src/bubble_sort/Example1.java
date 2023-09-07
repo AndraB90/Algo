@@ -1,16 +1,20 @@
 package bubble_sort;
 
+import timer.StopWatch;
+
 import java.util.Random;
 
 public class Example1 {
     public static void main(String[] args) {
-        int[] array = new int[10];
+        int[] array = new int[100_000];
         Random generator = new Random();
         for (int i = 0; i < array.length; i++) {
-            array[i] = generator.nextInt(1001);
+            array[i] = generator.nextInt(100_001);
         }
+        StopWatch watch = new StopWatch();
         System.out.println("Before sorting: ");
-        printArray(array);
+        //printArray(array);
+        watch.start();
 
         boolean isSwap = true;
 
@@ -29,7 +33,9 @@ public class Example1 {
 
 
         System.out.println("After sorting: ");
-        printArray(array);
+        //printArray(array);
+        watch.stop();
+        watch.printElapsedTime();
     }
 
     public static void printArray(int[] arr) {
