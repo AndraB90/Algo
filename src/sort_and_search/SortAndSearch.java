@@ -15,7 +15,7 @@ public class SortAndSearch {
     public static void sort(List<Integer> numbersList) {
         boolean isSwap = true;
         while (isSwap) {
-            isSwap = false;
+            isSwap =false;
             for (int i = 0; i < numbersList.size() - 1; i++) {
                 if (numbersList.get(i).compareTo(numbersList.get(i + 1)) > 0) {
                     Integer temp = numbersList.get(i);
