@@ -2,6 +2,7 @@ package sort_and_search;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class SortAndSearch {
     public static void main(String[] args) {
@@ -9,7 +10,10 @@ public class SortAndSearch {
         System.out.println("Before sorting: " + myNumbersList);
         System.out.print("After sorting: ");
         sort(myNumbersList);
-        search(myNumbersList, 9);
+        int numberIndex = new Random().nextInt(myNumbersList.size());
+        int numberToSearch= myNumbersList.get(numberIndex);
+        System.out.println("The number to search is: "+numberToSearch);
+        search(myNumbersList, numberToSearch);
     }
 
     public static void sort(List<Integer> numbersList) {
@@ -38,7 +42,7 @@ public class SortAndSearch {
             int middleNumber = numbersList.get(middleIndex);
 
             if (number == middleNumber) {
-                System.out.println("Number of trials: " + numberOfTrials);
+                System.out.println("Number of tries: " + numberOfTrials);
                 return middleIndex; // Return the index where the number is found.
             } else if (number < middleNumber) {
                 endIndex = middleIndex - 1;
@@ -48,8 +52,6 @@ public class SortAndSearch {
 
             numberOfTrials++;
         }
-
-        System.out.println("Number of trials: " + numberOfTrials);
         return -1; // Number not found in the list.
 
     }
