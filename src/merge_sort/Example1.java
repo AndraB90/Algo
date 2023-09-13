@@ -6,10 +6,11 @@ import java.util.Random;
 
 public class Example1 {
     public static void main(String[] args) {
-        int[] array = new int[100_000];
+        int[] array = new int[1000_000];
+        //0.208 seconds
         Random generator = new Random();
         for (int i = 0; i < array.length; i++) {
-            array[i] = generator.nextInt(100_001);
+            array[i] = generator.nextInt(1000_000);
         }
         StopWatch watch = new StopWatch();
         System.out.println("Before sorting: ");

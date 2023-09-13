@@ -7,9 +7,10 @@ import java.util.Random;
 public class Example1 {
     public static void main(String[] args) {
         int[] array = new int[100_000];
+        // 30.072 seconds * 10 for 1 million elements
         Random generator = new Random();
         for (int i = 0; i < array.length; i++) {
-            array[i] = generator.nextInt(100_001);
+            array[i] = generator.nextInt(100_000);
         }
         StopWatch watch = new StopWatch();
         System.out.println("Before sorting: ");

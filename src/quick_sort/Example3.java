@@ -7,6 +7,7 @@ import java.util.Random;
 public class Example3 {
     public static void main(String[] args) {
         int[] array = new int[1000_000];
+        // 0.101 seconds
         Random generator = new Random();
         for (int i = 0; i < array.length; i++) {
             array[i] = generator.nextInt(1000_000);
