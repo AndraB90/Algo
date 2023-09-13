@@ -6,19 +6,19 @@ import java.util.Random;
 
 public class Example3 {
     public static void main(String[] args) {
-        int[] array = new int[10];
+        int[] array = new int[1000_000];
         Random generator = new Random();
         for (int i = 0; i < array.length; i++) {
-            array[i] = generator.nextInt(100);
+            array[i] = generator.nextInt(1000_000);
         }
 
         StopWatch watch = new StopWatch();
         System.out.println("Before sorting: ");
-        printArray(array);
+        //printArray(array);
         watch.start();
         quickSort(array, 0, array.length - 1);
         System.out.println("After sorting: ");
-        printArray(array);
+        //printArray(array);
         watch.stop();
         watch.printElapsedTime();
 
@@ -39,23 +39,22 @@ public class Example3 {
 
     public static void quickSort(int[] array, int start, int end) {
         if (start < end) {
-            int pivotIndex = partition(array, start, end);
+            int pivotIndex = getPivotIndex(array, start, end);
             quickSort(array, start, pivotIndex - 1);
             quickSort(array, pivotIndex + 1, end);
         }
     }
 
-    public static int partition(int[] array, int start, int end) {
-        int pivot = array[end];
-        int partitionIndex = start;
-        for (int i = start; i <= end - 1; i++) {
-            if (array[i] <= pivot) {
-                swap(array, i, partitionIndex);
-                partitionIndex++;
+    public static int getPivotIndex(int[] array, int pivotIndex, int endIndex) {
+        int swapIndex = pivotIndex;
+        for (int i = pivotIndex + 1; i <= endIndex; i++) {
+            if (array[i] < array[pivotIndex]){
+                swapIndex++;
+                swap(array, i, swapIndex);
             }
         }
-        swap(array, partitionIndex, end);
-        return partitionIndex;
+        swap(array, pivotIndex, swapIndex);
+        return swapIndex;
     }
 
 }
