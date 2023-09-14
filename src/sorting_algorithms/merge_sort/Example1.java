@@ -1,4 +1,4 @@
-package merge_sort;
+package sorting_algorithms.merge_sort;
 
 import timer.StopWatch;
 
@@ -30,7 +30,19 @@ public class Example1 {
         System.out.println();
     }
 
+    public static boolean isSorted(int[] array) {
+        for (int i = 0; i < array.length - 1; i++) {
+            if (array[i] > array[i + 1]) {
+                return false;
+            }
+        }
+        return true;
+    }
+
     public static void divide(int[] array) {
+        if (isSorted(array)) {
+            return;
+        }
         int size = array.length;
         if (size < 2) {
             return;
