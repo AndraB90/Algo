@@ -7,6 +7,7 @@ public class GuessTheNumberGame {
     public static void main(String[] args) {
         System.out.println("Input a number between 1 and 100: ");
         int[] computerArr = new int[100];
+
         for (int i = 1; i <= 100; i++) {
             computerArr[i-1]=i;
         }
@@ -30,8 +31,6 @@ public class GuessTheNumberGame {
                 break;
             }
         }
-
         BinarySearch.findNumber(computerArr, secretNumber);
-
     }
 }

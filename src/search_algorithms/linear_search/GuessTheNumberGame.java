@@ -7,6 +7,7 @@ public class GuessTheNumberGame {
     public static void main(String[] args) {
         System.out.println("Input a number between 1 and 100: ");
         int[] computerArr = new int[100];
+
         for (int i = 1; i <= 100; i++) {
             computerArr[i - 1] = i;
         }
@@ -20,6 +21,7 @@ public class GuessTheNumberGame {
         while (true) {
             playerGuess = scan.nextInt();
             count++;
+
             if (playerGuess < secretNumber) {
                 System.out.println("More");
             } else if (playerGuess > secretNumber) {
@@ -30,13 +32,11 @@ public class GuessTheNumberGame {
                 break;
             }
         }
-
         int computerGuessIndex = LinearSearch.findNumber(computerArr, secretNumber);
         if (computerGuessIndex != -1) {
             System.out.println("Computer's guess: " + computerArr[computerGuessIndex]);
         } else {
             System.out.println("Computer did not find the number.");
         }
-
     }
 }

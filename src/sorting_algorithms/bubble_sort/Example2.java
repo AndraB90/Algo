@@ -21,12 +21,15 @@ public class Example2 {
             for (int i = 0; i < array.length; i++) {
 
                 isSorted = true;
+
                 for (int j = 1; j < array.length - i; j++) {
+
                     if (array[j] < array[j - 1]) {
                         swapValues(array, j, j - 1);
                         isSorted = false;
                     }
                 }
+
                 if (isSorted) {
                     break;
                 }
@@ -38,6 +41,7 @@ public class Example2 {
     }
 
     public static void printArray(int[] arr) {
+
         for (var item : arr) {
             System.out.print(item + " ");
         }
@@ -51,7 +55,9 @@ public class Example2 {
     }
 
     public static boolean isSorted(int[] array) {
+
         for (int i = 0; i < array.length - 1; i++) {
+
             if (array[i] > array[i + 1]) {
                 return false;
             }

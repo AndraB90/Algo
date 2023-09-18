@@ -9,6 +9,7 @@ public class Example1 {
         int[] array = new int[100_000];
         // 30.072 seconds * 10 * O(n) for 1 million elements
         Random generator = new Random();
+
         for (int i = 0; i < array.length; i++) {
             array[i] = generator.nextInt(100_000);
         }
@@ -24,7 +25,9 @@ public class Example1 {
 
             while (isSwap) {
                 isSwap = false;
+
                 for (int i = 0; i < array.length - 1; i++) {
+
                     if (array[i] > array[i + 1]) {
                         //int temp = array[i];
                         //array[i] = array[i + 1];
@@ -34,7 +37,6 @@ public class Example1 {
                     }
                 }
             }
-
             System.out.println("After sorting: ");
             //printArray(array);
             watch.stop();
@@ -43,6 +45,7 @@ public class Example1 {
     }
 
     public static void printArray(int[] arr) {
+
         for (var item : arr) {
             System.out.print(item + " ");
         }
@@ -56,7 +59,9 @@ public class Example1 {
     }
 
     public static boolean isSorted(int[] array) {
+
         for (int i = 0; i < array.length - 1; i++) {
+
             if (array[i] > array[i + 1]) {
                 return false;
             }

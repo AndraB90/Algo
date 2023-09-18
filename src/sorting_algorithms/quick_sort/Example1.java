@@ -8,6 +8,7 @@ public class Example1 {
     public static void main(String[] args) {
         int[] array = new int[10];
         Random generator = new Random();
+
         for (int i = 0; i < array.length; i++) {
             array[i] = generator.nextInt(100);
         }
@@ -23,6 +24,7 @@ public class Example1 {
     }
 
     public static void printArray(int[] arr) {
+
         for (var item : arr) {
             System.out.print(item + " ");
         }
@@ -35,7 +37,9 @@ public class Example1 {
         arr[secondIndex] = temp;
     }
     public static boolean isSorted(int[] array) {
+
         for (int i = 0; i < array.length - 1; i++) {
+
             if (array[i] > array[i + 1]) {
                 return false;
             }
@@ -44,9 +48,11 @@ public class Example1 {
     }
 
     public static void quickSort(int[] arr, int begin, int end) {
+
         if (isSorted(arr)) {
             return;
         }
+
         if (begin < end) {
             int pivotIndex = createPartition(arr, begin, end);
             quickSort(arr, begin, pivotIndex - 1);
@@ -58,13 +64,17 @@ public class Example1 {
         int pivot = arr[beginIndex];
         int leftIndex = beginIndex + 1;
         int rightIndex = endIndex;
+
         while (true) {
+
             while (leftIndex <= rightIndex && arr[leftIndex] <= pivot) {
                 leftIndex++;
             }
+
             while (leftIndex <= rightIndex && arr[rightIndex] >= pivot) {
                 rightIndex--;
             }
+
             if (leftIndex > rightIndex) {
                 break;
             }
@@ -73,8 +83,5 @@ public class Example1 {
         }
         swapValues(arr, beginIndex, rightIndex);
         return rightIndex;
-
     }
-
-
 }
