@@ -7,6 +7,7 @@ public class Example1 {
     }
 
     private static int getSum(int n) {
+
         if (n == 0) {
             return 0;
         }

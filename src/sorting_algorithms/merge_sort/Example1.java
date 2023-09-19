@@ -1,4 +1,4 @@
-package merge_sort;
+package sorting_algorithms.merge_sort;
 
 import timer.StopWatch;
 
@@ -9,6 +9,7 @@ public class Example1 {
         int[] array = new int[1000_000];
         //0.208 seconds
         Random generator = new Random();
+
         for (int i = 0; i < array.length; i++) {
             array[i] = generator.nextInt(1000_000);
         }
@@ -24,14 +25,31 @@ public class Example1 {
     }
 
     public static void printArray(int[] arr) {
+
         for (var item : arr) {
             System.out.print(item + " ");
         }
         System.out.println();
     }
 
+    public static boolean isSorted(int[] array) {
+
+        for (int i = 0; i < array.length - 1; i++) {
+
+            if (array[i] > array[i + 1]) {
+                return false;
+            }
+        }
+        return true;
+    }
+
     public static void divide(int[] array) {
+
+        if (isSorted(array)) {
+            return;
+        }
         int size = array.length;
+
         if (size < 2) {
             return;
         }
@@ -42,6 +60,7 @@ public class Example1 {
         for (int i = 0; i < leftArray.length; i++) {
             leftArray[i] = array[i];
         }
+
         for (int i = 0; i < rightArray.length; i++) {
             rightArray[i] = array[middleIndex + i];
         }
@@ -56,6 +75,7 @@ public class Example1 {
         int leftIndex = 0, rightIndex = 0, bigIndex = 0;
 
         while (leftIndex < leftSize && rightIndex < rightSize) {
+
             if (leftArray[leftIndex] <= rightArray[rightIndex]) {
                 bigArray[bigIndex] = leftArray[leftIndex];
                 leftIndex++;

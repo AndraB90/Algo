@@ -1,16 +1,17 @@
-package quick_sort;
+package sorting_algorithms.quick_sort;
 
 import timer.StopWatch;
 
 import java.util.Random;
 
-public class Example1 {
+public class Example2 {
     public static void main(String[] args) {
-        int[] array = new int[10];
+        int[] array = new int[]{22, 17, 11, 3, 8, 7};
         Random generator = new Random();
-        for (int i = 0; i < array.length; i++) {
+        /*for (int i = 0; i < array.length; i++) {
             array[i] = generator.nextInt(100);
         }
+         */
         StopWatch watch = new StopWatch();
         System.out.println("Before sorting: ");
         printArray(array);
@@ -23,6 +24,7 @@ public class Example1 {
     }
 
     public static void printArray(int[] arr) {
+
         for (var item : arr) {
             System.out.print(item + " ");
         }
@@ -34,8 +36,23 @@ public class Example1 {
         arr[firstIndex] = arr[secondIndex];
         arr[secondIndex] = temp;
     }
+    public static boolean isSorted(int[] array) {
+
+        for (int i = 0; i < array.length - 1; i++) {
+
+            if (array[i] > array[i + 1]) {
+                return false;
+            }
+        }
+        return true;
+    }
 
     public static void quickSort(int[] arr, int begin, int end) {
+
+        if (isSorted(arr)) {
+            return;
+        }
+
         if (begin < end) {
             int pivotIndex = createPartition(arr, begin, end);
             quickSort(arr, begin, pivotIndex - 1);
@@ -44,26 +61,17 @@ public class Example1 {
     }
 
     public static int createPartition(int[] arr, int beginIndex, int endIndex) {
-        int pivot = arr[beginIndex];
-        int leftIndex = beginIndex + 1;
-        int rightIndex = endIndex;
-        while (true) {
-            while (leftIndex <= rightIndex && arr[leftIndex] <= pivot) {
-                leftIndex++;
-            }
-            while (leftIndex <= rightIndex && arr[rightIndex] >= pivot) {
-                rightIndex--;
-            }
-            if (leftIndex > rightIndex) {
-                break;
-            }
+        int pivot = arr[endIndex];
+        int index = beginIndex-1;
 
-            swapValues(arr, leftIndex, rightIndex);
+        for (int i = beginIndex; i < endIndex; i++) {
+
+            if(arr[i]<=pivot){
+                index++;
+                swapValues(arr, index, i);
+            }
         }
-        swapValues(arr, beginIndex, rightIndex);
-        return rightIndex;
-
+        swapValues(arr,index+1, endIndex);
+        return index+1;
     }
-
-
 }

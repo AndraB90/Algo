@@ -12,6 +12,7 @@ public class Example1 {
         for (int i = 0; i < left.length; i++) {
             left[i]=bigArray[i];
         }
+
         for (int i = 0; i < right.length; i++) {
             right[i]=bigArray[i+middle];
         }
