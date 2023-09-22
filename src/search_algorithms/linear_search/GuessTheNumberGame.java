@@ -33,6 +33,7 @@ public class GuessTheNumberGame {
             }
         }
         int computerGuessIndex = LinearSearch.findNumber(computerArr, secretNumber);
+
         if (computerGuessIndex != -1) {
             System.out.println("Computer's guess: " + computerArr[computerGuessIndex]);
         } else {

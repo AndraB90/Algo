@@ -10,11 +10,11 @@ public class Example1 {
         int[] right = new int[bigArray.length - middle];
 
         for (int i = 0; i < left.length; i++) {
-            left[i]=bigArray[i];
+            left[i] = bigArray[i];
         }
 
         for (int i = 0; i < right.length; i++) {
-            right[i]=bigArray[i+middle];
+            right[i] = bigArray[i + middle];
         }
 
         System.out.println(Arrays.toString(left));

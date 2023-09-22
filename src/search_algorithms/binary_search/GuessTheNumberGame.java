@@ -9,7 +9,7 @@ public class GuessTheNumberGame {
         int[] computerArr = new int[100];
 
         for (int i = 1; i <= 100; i++) {
-            computerArr[i-1]=i;
+            computerArr[i - 1] = i;
         }
         Scanner scan = new Scanner(System.in);
         Random r = new Random();
@@ -21,6 +21,7 @@ public class GuessTheNumberGame {
         while (true) {
             playerGuess = scan.nextInt();
             count++;
+
             if (playerGuess < secretNumber) {
                 System.out.println("More");
             } else if (playerGuess > secretNumber) {

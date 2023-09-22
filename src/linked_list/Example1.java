@@ -16,7 +16,7 @@ public class Example1 {
         /**
          * ArrayList is slower for inserting / adding / removing a value, because it needs to create another array in the background
          */
-        colorsArrayList.add(3,"black");
+        colorsArrayList.add(3, "black");
 
         System.out.println(colorsArrayList);
 
@@ -44,6 +44,5 @@ public class Example1 {
          * O(n) linear time complexity
          */
         System.out.println(colorsLinkedList.get(4));
-
     }
 }
