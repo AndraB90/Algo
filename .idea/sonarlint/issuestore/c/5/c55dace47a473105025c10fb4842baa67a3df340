@@ -1,10 +1,10 @@
 
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(ÁÛ²ôşÿÿÿÿ8À»« ©1
+L	java:S106"+Replace this use of System.out by a logger.(ÁÛ²ôşÿÿÿÿ8À»« ©1
 O
-java:S1481"2Remove this unused "computerGuess" local variable.(“ÓÏĞ8Õ»« ©1
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(Õó—±üÿÿÿÿ8×»« ©1
-U	java:S106"9Replace this use of System.out or System.err by a logger.(û™İº8×»« ©1
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(åš¤ùÿÿÿÿ8×»« ©1
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(ŒÉÃÅûÿÿÿÿ8Ù»« ©1
-Z	java:S106$"9Replace this use of System.out or System.err by a logger.(¼•ôÒùÿÿÿÿ8êó¯¡©1
-U	java:S106&"9Replace this use of System.out or System.err by a logger.(„Üéá8ëó¯¡©1
+java:S1481"2Remove this unused "computerGuess" local variable.(“ÓÏĞ8Õ»« ©1
+L	java:S106"+Replace this use of System.out by a logger.(Õó—±üÿÿÿÿ8×»« ©1
+G	java:S106"+Replace this use of System.out by a logger.(û™İº8×»« ©1
+L	java:S106"+Replace this use of System.out by a logger.(åš¤ùÿÿÿÿ8×»« ©1
+L	java:S106"+Replace this use of System.out by a logger.(ŒÉÃÅûÿÿÿÿ8Ù»« ©1
+L	java:S106%"+Replace this use of System.out by a logger.(¼•ôÒùÿÿÿÿ8êó¯¡©1
+G	java:S106'"+Replace this use of System.out by a logger.(„Üéá8ëó¯¡©1

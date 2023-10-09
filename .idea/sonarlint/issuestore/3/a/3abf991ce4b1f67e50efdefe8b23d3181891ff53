@@ -1,7 +1,7 @@
 
-N	java:S106
-"9Replace this use of System.out or System.err by a logger.(‡ñĞç
-N	java:S106"9Replace this use of System.out or System.err by a logger.(±ªğÑ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(¬îòşÿÿÿÿ
-N	java:S106 "9Replace this use of System.out or System.err by a logger.(­ş£¿
-N	java:S106-"9Replace this use of System.out or System.err by a logger.(¾ÒÙÈ
+@	java:S106
+"+Replace this use of System.out by a logger.(‡ñĞç
+@	java:S106"+Replace this use of System.out by a logger.(±ªğÑ
+E	java:S106"+Replace this use of System.out by a logger.(¬îòşÿÿÿÿ
+@	java:S106#"+Replace this use of System.out by a logger.(­ş£¿
+@	java:S1060"+Replace this use of System.out by a logger.(¾ÒÙÈ
