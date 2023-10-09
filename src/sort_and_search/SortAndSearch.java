@@ -52,7 +52,6 @@ public class SortAndSearch {
             } else {
                 startIndex = middleIndex + 1;
             }
-
             numberOfTrials++;
         }
         return -1; // Number not found in the list.

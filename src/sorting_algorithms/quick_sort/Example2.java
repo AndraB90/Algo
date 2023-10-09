@@ -36,6 +36,7 @@ public class Example2 {
         arr[firstIndex] = arr[secondIndex];
         arr[secondIndex] = temp;
     }
+
     public static boolean isSorted(int[] array) {
 
         for (int i = 0; i < array.length - 1; i++) {
@@ -62,16 +63,16 @@ public class Example2 {
 
     public static int createPartition(int[] arr, int beginIndex, int endIndex) {
         int pivot = arr[endIndex];
-        int index = beginIndex-1;
+        int index = beginIndex - 1;
 
         for (int i = beginIndex; i < endIndex; i++) {
 
-            if(arr[i]<=pivot){
+            if (arr[i] <= pivot) {
                 index++;
                 swapValues(arr, index, i);
             }
         }
-        swapValues(arr,index+1, endIndex);
-        return index+1;
+        swapValues(arr, index + 1, endIndex);
+        return index + 1;
     }
 }
