@@ -10,7 +10,7 @@ public class Main {
 
         head.nextAddress = n1;
         n1.nextAddress = n2;
-        n2.nextAddress =n3;
+        n2.nextAddress = n3;
         n3.nextAddress = n4;
         n4.nextAddress = null;
     }

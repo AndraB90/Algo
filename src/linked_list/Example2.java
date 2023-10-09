@@ -24,12 +24,11 @@ public class Example2 {
         lettersQueue.offer("D");
         lettersQueue.offer("F");
         //lettersQueue.poll();
-        lettersQueue.add(4,"E");
+        lettersQueue.add(4, "E");
         lettersQueue.addFirst("0");
         lettersQueue.addLast("1");
         lettersQueue.removeFirst();
         lettersQueue.removeLast();
-
 
         System.out.println(lettersQueue);
     }

@@ -36,6 +36,7 @@ public class Example1 {
         arr[firstIndex] = arr[secondIndex];
         arr[secondIndex] = temp;
     }
+
     public static boolean isSorted(int[] array) {
 
         for (int i = 0; i < array.length - 1; i++) {
@@ -78,7 +79,6 @@ public class Example1 {
             if (leftIndex > rightIndex) {
                 break;
             }
-
             swapValues(arr, leftIndex, rightIndex);
         }
         swapValues(arr, beginIndex, rightIndex);
