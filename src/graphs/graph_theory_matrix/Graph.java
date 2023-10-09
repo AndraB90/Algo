@@ -1,4 +1,4 @@
-package graphs.graph_theory;
+package graphs.graph_theory_matrix;
 
 import java.util.ArrayList;
 import java.util.List;

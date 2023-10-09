@@ -1,4 +1,4 @@
-package graphs.graph_theory;
+package graphs.graph_theory_matrix;
 
 public class Main {
     public static void main(String[] args) {
@@ -40,6 +40,5 @@ public class Main {
 
         System.out.println(graph.checkLink(1,2));
         System.out.println(graph.checkLink(0,5));
-
     }
 }

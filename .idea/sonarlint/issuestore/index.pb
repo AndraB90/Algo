@@ -51,3 +51,9 @@ _
 /src/graphs/graph_theory_list/DirectedGraph.java,a/5/a54e40c3ed4771cd5cb9d45bd66ce1f862f52f60
 V
 &src/graphs/graph_theory_list/Main.java,a/f/afa03155817274b2921ccf8f35bf1a8043cc696b
+8
+Algo.iml,e/d/ed6427a64a044e5978d82c97396ccd0c52365479
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8/8/88a9255124c95bdc913197c120a8d560edc59c8e
+S
+#.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0

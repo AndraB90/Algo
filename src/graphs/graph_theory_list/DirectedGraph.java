@@ -36,6 +36,4 @@ public class DirectedGraph {
             System.out.println();
         }
     }
-
-
 }
