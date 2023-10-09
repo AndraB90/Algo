@@ -16,7 +16,7 @@ public class BinarySearch {
             count++;
 
             if (numberToFind == middleNumber) {
-                System.out.println("Computer found number using "+count+" trials");
+                System.out.println("Computer found number using " + count + " trials");
                 return middlePosition;
             } else if (numberToFind > middleNumber) {
                 minPosition = middlePosition + 1;
