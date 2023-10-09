@@ -1,8 +1,6 @@
 
-S	java:S106"9Replace this use of System.out or System.err by a logger.(ÁÛ²ôşÿÿÿÿ
-H
-java:S1481"2Remove this unused "computerGuess" local variable.(“ÓÏĞ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(Õó—±üÿÿÿÿ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(û™İº
-S	java:S106"9Replace this use of System.out or System.err by a logger.(åš¤ùÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(ŒÉÃÅûÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(ÁÛ²ôşÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(Õó—±üÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(û™İº
+E	java:S106"+Replace this use of System.out by a logger.(åš¤ùÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(ŒÉÃÅûÿÿÿÿ

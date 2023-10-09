@@ -6,7 +6,7 @@ I
 java:S1481
 ".Remove this unused "generator" local variable.(¼Ú’¸þÿÿÿÿ
 V	java:S125"<This block of commented-out lines of code should be removed.(¦ˆòÐùÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(ý»«øÿÿÿÿ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(åç…¯
-S	java:S106"9Replace this use of System.out or System.err by a logger.(šýÏÕüÿÿÿÿ
-S	java:S106!"9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(ý»«øÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(åç…¯
+E	java:S106"+Replace this use of System.out by a logger.(šýÏÕüÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(ªÓ¼áþÿÿÿÿ
