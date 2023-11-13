@@ -7,18 +7,14 @@ import java.util.Queue;
 public class Graph {
     ArrayList<Node> nodes;
     int[][] matrix;
-
     Graph(int size){
-
         nodes = new ArrayList<>();
         matrix = new int[size][size];
     }
     public void addNode(Node node) {
-
         nodes.add(node);
     }
     public void addEdge(int src, int dst) {
-
         matrix[src][dst] = 1;
     }
     public boolean checkEdge(int src, int dst) {
@@ -31,7 +27,6 @@ public class Graph {
         }
     }
     public void print() {
-
         System.out.print("  ");
         for(Node node : nodes) {
             System.out.print(node.data + " ");
@@ -48,7 +43,6 @@ public class Graph {
         System.out.println();
     }
     public void breadthFirstSearch(int src) {
-
         Queue<Integer> queue = new LinkedList<>();
         boolean[] visited = new boolean[matrix.length];
 
